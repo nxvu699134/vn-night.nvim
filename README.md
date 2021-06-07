@@ -3,11 +3,12 @@
 ### A dark neovim colorscheme written in lua. Support built-in LSP and [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 # 🔌 Requirements
-```
-Neovim >= 0.5.0
 
-[Galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) if you use this plugin for statusline
-```
+- Neovim >= 0.5.0
+
+- [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) if you use this plugin for statusline
+
+
 # 📥 Installation
 ```vim
 " Vim-Plug
