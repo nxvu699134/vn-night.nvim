@@ -2,6 +2,11 @@
 
 ### A dark neovim colorscheme written in lua. Support built-in LSP and [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
+# 🌈 Color palette
+![core pallete](https://github.com/nxvu699134/vn-night.nvim/blob/main/images/core_pallete.png)
+![gray shade](https://github.com/nxvu699134/vn-night.nvim/blob/main/images/gray_pallete.png)
+
+
 # 🔌 Requirements
 
 - Neovim >= 0.5.0
@@ -41,5 +46,5 @@ require('vn-night.galaxyline')
 ```
 
 # 👀 Preview
-![preview](https://github.com/nxvu699134/vn-night.nvim/blob/main/Preview.png)
+![preview](https://github.com/nxvu699134/vn-night.nvim/blob/main/images/Preview.png)
 
