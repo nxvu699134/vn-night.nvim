@@ -34,7 +34,7 @@ function load_syntax()
     ModeMsg               = { fg=schema.fg,       bg=schema.none,         style='bold'};
     MatchParen            = { fg=schema.orange,   bg=schema.none,         style='bold'};
     NonText               = { fg=schema.fg_disabled,      bg=schema.none };
-    Whitespace            = { fg=schema.gray3,            bg=schema.none };
+    Whitespace            = { fg=schema.gray2,    bg=schema.none };
     SpecialKey            = { fg=schema.fg_disabled,      bg=schema.none };
     Pmenu                 = { fg=schema.fg_invert,        bg=schema.bg_popup };
     PmenuSel              = { fg=schema.fg_invert,        bg=schema.blue };-- Popup menu: selected item.
