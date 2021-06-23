@@ -36,11 +36,11 @@ function load_syntax()
     NonText               = { fg=schema.fg_disabled,      bg=schema.none };
     Whitespace            = { fg=schema.gray2,    bg=schema.none };
     SpecialKey            = { fg=schema.fg_disabled,      bg=schema.none };
-    Pmenu                 = { fg=schema.fg_invert,        bg=schema.bg_popup };
-    PmenuSel              = { fg=schema.fg_invert,        bg=schema.blue };-- Popup menu: selected item.
+    Pmenu                 = { fg=schema.fg_popup,       bg=schema.bg_popup };
+    PmenuSel              = { fg=schema.fg_popup,       bg=schema.bg_popup_sel };-- Popup menu: selected item.
     PmenuSbar             = {                     bg=schema.bg_popup };-- Popup menu: scrollbar.
-    PmenuThumb            = {                     bg=schema.teal };-- Popup menu: Thumb of the scrollbar.
-    NormalFloat           = { fg=schema.fg_invert,bg=schema.bg_popup };
+    PmenuThumb            = {                     bg=schema.bg_popup_sel };-- Popup menu: Thumb of the scrollbar.
+    NormalFloat           = { fg=schema.fg,bg=schema.bg_popup };
     WildMenu              = { fg=schema.fg,       bg=schema.green };
     Question              = { fg=schema.yellow,   bg=schema.none };
     TabLineFill           = { fg=schema.none,     bg=schema.none };
@@ -125,22 +125,6 @@ function load_syntax()
     LspDiagnosticsDefaultWarning        = { fg=schema.diag.warning.fg,};
     LspDiagnosticsDefaultInformation    = { fg=schema.diag.info.fg,   };
     LspDiagnosticsDefaultHint           = { fg=schema.diag.hint.fg,   };
-
-    markdownBold = {fg = schema.diag.warning.fg, style="bold,underline"}; --this shit is for signature help, highlight current param
-
-    CocErrorHighlight   = { fg=schema.diag.danger.fg,     bg=schema.diag.danger.bg,   style='undercurl,bold'};
-    CocWarningHighlight = { fg=schema.diag.warning.fg,    bg=schema.diag.warning.bg,  style='undercurl,bold'};
-    CocInfoHighlight    = { fg=schema.diag.info.fg,       bg=schema.diag.info.bg,     style='undercurl,bold'};
-    CocHintHighlight    = { fg=schema.diag.hint.fg,       bg=schema.diag.hint.bg,     style='undercurl,bold'};
-
-    CocHighlightRead      = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
-    CocHighlightWrite     = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
-    CocHighlightText      = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
-
-    CocErrorSign      = { fg=schema.diag.danger.fg,   style='bold'};
-    CocWarningSign    = { fg=schema.diag.warning.fg,  style='bold'};
-    CocInfoSign       = { fg=schema.diag.info.fg,     style='bold'};
-    CocHintSign       = { fg=schema.diag.hint.fg,     style='bold'};
   }
   return syntax
 end
