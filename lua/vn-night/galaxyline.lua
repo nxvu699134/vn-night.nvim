@@ -4,7 +4,7 @@ local fileinfo = require('galaxyline.provider_fileinfo')
 
 gl.short_line_list = {'NvimTree','vista','dbui','packer', 'startify'}
 
-local schema = require('schema').schema
+local schema = require('vn-night.schema').schema
 
 local colors = {
   bg = schema.gray2,
