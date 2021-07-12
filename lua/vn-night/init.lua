@@ -125,6 +125,20 @@ function load_syntax()
     LspDiagnosticsDefaultWarning        = { fg=schema.diag.warning.fg,};
     LspDiagnosticsDefaultInformation    = { fg=schema.diag.info.fg,   };
     LspDiagnosticsDefaultHint           = { fg=schema.diag.hint.fg,   };
+
+    CocErrorHighlight   = { fg=schema.diag.danger.fg,     bg=schema.diag.danger.bg,   style='undercurl,bold'};
+    CocWarningHighlight = { fg=schema.diag.warning.fg,    bg=schema.diag.warning.bg,  style='undercurl,bold'};
+    CocInfoHighlight    = { fg=schema.diag.info.fg,       bg=schema.diag.info.bg,     style='undercurl,bold'};
+    CocHintHighlight    = { fg=schema.diag.hint.fg,       bg=schema.diag.hint.bg,     style='undercurl,bold'};
+
+    CocHighlightRead      = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
+    CocHighlightWrite     = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
+    CocHighlightText      = { fg=schema.none,     bg=schema.bg_highlight, style='bold' };
+
+    CocErrorSign      = { fg=schema.diag.danger.fg,   style='bold'};
+    CocWarningSign    = { fg=schema.diag.warning.fg,  style='bold'};
+    CocInfoSign       = { fg=schema.diag.info.fg,     style='bold'};
+    CocHintSign       = { fg=schema.diag.hint.fg,     style='bold'};
   }
   return syntax
 end
