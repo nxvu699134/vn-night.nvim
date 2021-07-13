@@ -28,7 +28,7 @@ function load_syntax()
     DiffChange            = { fg=schema.fg_invert,    bg=schema.yellow };
     DiffDelete            = { fg=schema.fg_invert,    bg=schema.red };
     DiffText              = { fg=schema.fg_invert,    bg=schema.fg };
-    Directory             = { fg=schema.fg_disabled,  bg=schema.none};
+    Directory             = { fg=schema.blue,         bg=schema.none};
     ErrorMsg              = { fg=schema.red,      bg=schema.none,         style='bold'};
     WarningMsg            = { fg=schema.yellow,   bg=schema.none,         style='bold'};
     ModeMsg               = { fg=schema.fg,       bg=schema.none,         style='bold'};
@@ -139,6 +139,8 @@ function load_syntax()
     CocWarningSign    = { fg=schema.diag.warning.fg,  style='bold'};
     CocInfoSign       = { fg=schema.diag.info.fg,     style='bold'};
     CocHintSign       = { fg=schema.diag.hint.fg,     style='bold'};
+
+    StartifyPath      = { fg=schema.fg_disabled }
   }
   return syntax
 end
