@@ -45,8 +45,8 @@ function load_syntax()
     Question              = { fg=schema.yellow,   bg=schema.none };
     TabLineFill           = { fg=schema.none,     bg=schema.none };
     TabLineSel            = { fg=schema.blue,     bg=schema.none };
-    StatusLine            = { fg=schema.fg,       bg=schema.none };-- status line of current window
-    StatusLineNC          = { fg=schema.fg,       bg=schema.none };-- status lines of not-current windows
+    StatusLine            = { fg=schema.fg,       bg=schema.gray2 };-- status line of current window
+    StatusLineNC          = { fg=schema.fg,       bg=schema.gray2 };-- status lines of not-current windows
     SpellBad              = { fg=schema.red,      bg=schema.none,         style='undercurl'};
     SpellCap              = { fg=schema.blue,     bg=schema.none,         style='undercurl'};
     SpellLocal            = { fg=schema.cyan,     bg=schema.none,         style='undercurl'};
