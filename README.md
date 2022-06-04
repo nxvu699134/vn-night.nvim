@@ -11,7 +11,10 @@
 
 - Neovim >= 0.5.0
 
-- [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim) if you use this plugin for statusline
+# ⚡️ Support:
+
+- [galaxyline.nvim](https://github.com/glepnir/galaxyline.nvim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 
 # 📥 Installation
@@ -36,8 +39,11 @@ colorscheme vn-night
 ```lua
 --Lua:
 require('vn-night').setup()
---or
-vim.cmd('colorscheme vn-night')
+```
+
+Setup theme for lualine.nvim
+```lua
+require('lualine').setup {options = {theme = 'vn-night'}}
 ```
 
 Enable the colorscheme for galaxyline just put this line in your config:
