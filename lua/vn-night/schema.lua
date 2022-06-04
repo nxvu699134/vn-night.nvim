@@ -53,6 +53,4 @@ end
 
 local schema = make_schema(false);
 
-return {
-  schema = schema;
-}
+return schema

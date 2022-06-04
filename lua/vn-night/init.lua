@@ -1,4 +1,4 @@
-local schema = require('vn-night.schema').schema
+local schema = require('vn-night.schema')
 local u = require('vn-night.utils')
 
 local function syntax()
