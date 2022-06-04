@@ -4,7 +4,7 @@ local fileinfo = require('galaxyline.provider_fileinfo')
 
 gl.short_line_list = {'NvimTree','vista','dbui','packer', 'startify'}
 
-local schema = require('vn-night.schema').schema
+local schema = require('vn-night').schema
 
 local colors = {
   bg = schema.gray2,
@@ -77,7 +77,7 @@ end
 local i = 1
 gls.left[i] = {
   FirstElement = {
-    provider = function() 
+    provider = function()
       vim.api.nvim_command('hi GalaxyFirstElement guifg='..mode_color())
       return icons.sep.right
     end,
@@ -89,7 +89,7 @@ gls.left[i] = {
   Logo = {
     provider = function()
       vim.api.nvim_command('hi GalaxyLogo guibg='..mode_color())
-      return '   ' 
+      return '   '
     end,
   },
 }

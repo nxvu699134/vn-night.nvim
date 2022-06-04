@@ -1,5 +1,15 @@
 local u = require('vn-night.utils')
 
+function reverse(t)
+  local ret = {}
+  local n = #t
+  local i = 1
+  for i = 0, n-1 do
+    ret[i+1] = t[n-i]
+  end
+  return ret
+end
+
 local function make_schema(light)
   local base_gray = {
     u.hsl_to_hex(236, 41, 8),
@@ -51,6 +61,4 @@ local function make_schema(light)
   return colors;
 end
 
-local schema = make_schema(false);
-
-return schema
+return {make_schema = make_schema}

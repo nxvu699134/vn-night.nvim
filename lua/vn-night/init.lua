@@ -1,9 +1,11 @@
-local schema = require('vn-night.schema')
+local is_light = vim.g.vn_night_theme == 'light'
+
+local schema = require('vn-night.schema').make_schema(is_light)
 local u = require('vn-night.utils')
 
 local function syntax()
   local syntax = {
-    Normal                      =  {  fg=schema.fg,                    bg=schema.none              },
+    Normal                      =  {  fg=schema.fg,                    bg=schema.bg              },
     Terminal                    =  {  fg=schema.fg,                    bg=schema.none              },
     SignColumn                  =  {  fg=schema.fg,                    bg=schema.none              },
     FoldColumn                  =  {  fg=schema.fg_disabled,           bg=schema.none              },
@@ -162,11 +164,13 @@ local function syntax()
   return syntax
 end
 
+
 function setup()
   vim.api.nvim_command('hi clear')
   if vim.fn.exists('syntax_on') then
     vim.api.nvim_command('syntax reset')
   end
+
   vim.o.background = 'dark'
   vim.o.termguicolors = true
 

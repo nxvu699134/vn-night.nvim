@@ -1,4 +1,4 @@
-local schema = require('vn-night.schema')
+local schema = require('vn-night').schema
 
 local line_theme = {}
 
