@@ -82,7 +82,7 @@ local function syntax()
     Constant                    =  {  fg=schema.cyan,                  bg=schema.none              };
     Macro                       =  {  fg=schema.cyan,                  bg=schema.none              };
     Identifier                  =  {  fg=schema.blue,                  bg=schema.none              };
-    Comment                     =  {  fg=schema.fg_disabled,           bg=schema.none,             style='italic'          };
+    Comment                     =  {  fg=schema.grey[9],           bg=schema.none,             style='italic'          };
     SpecialComment              =  {  fg=schema.gray[4],               bg=schema.none              };
     Todo                        =  {  fg=schema.cyan,                  bg=schema.none              };
     Delimiter                   =  {  fg=schema.fg,                    bg=schema.none              };

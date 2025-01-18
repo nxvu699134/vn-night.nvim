@@ -46,7 +46,7 @@ local function make_schema(light)
   colors.bg_highlight  =  u.rgba_to_rgb(colors.blue,    colors.bg,     0.3)
   colors.bg_visual     =  u.rgba_to_rgb(colors.blue,    colors.bg,     0.4)
   colors.fg            =  colors.gray[10]
-  colors.fg_disabled   =  colors.gray[9]
+  colors.fg_disabled   =  colors.gray[5]
   colors.fg_invert     =  colors.gray[1]
   colors.fg_popup      =  colors.gray[10]
 
