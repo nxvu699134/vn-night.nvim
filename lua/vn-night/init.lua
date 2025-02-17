@@ -23,7 +23,7 @@ local function syntax()
     CursorIM                    =  {  fg=schema.fg_invert,             bg=schema.gray[8],            },
     CursorColumn                =  {  fg=schema.none,                  bg=schema.bg_highlight,     style='underline'       },
     CursorLine                  =  {  fg=schema.none,                  bg=schema.bg_highlight      },
-    LineNr                      =  {  fg=schema.gray[3],               bg=schema.none              },
+    LineNr                      =  {  fg=schema.gray[5],               bg=schema.none              },
     CursorLineNr                =  {  fg=schema.orange,                bg=schema.none,             style="bold"            },
     DiffAdd                     =  {  fg=schema.fg_invert,             bg=schema.green             },
     DiffChange                  =  {  fg=schema.fg_invert,             bg=schema.yellow            },
@@ -82,7 +82,7 @@ local function syntax()
     Constant                    =  {  fg=schema.cyan,                  bg=schema.none              };
     Macro                       =  {  fg=schema.cyan,                  bg=schema.none              };
     Identifier                  =  {  fg=schema.blue,                  bg=schema.none              };
-    Comment                     =  {  fg=schema.fg_disabled,           bg=schema.none,             style='italic'          };
+    Comment                     =  {  fg=schema.gray[9],               bg=schema.none,             style='italic'          };
     SpecialComment              =  {  fg=schema.gray[4],               bg=schema.none              };
     Todo                        =  {  fg=schema.cyan,                  bg=schema.none              };
     Delimiter                   =  {  fg=schema.fg,                    bg=schema.none              };
