@@ -10,6 +10,7 @@ local function syntax()
     SignColumn                  =  {  fg=schema.fg,                    bg=schema.none              },
     FoldColumn                  =  {  fg=schema.fg_disabled,           bg=schema.none              },
     VertSplit                   =  {  fg=schema.gray[5],               bg=schema.none              },
+    WinSeparator                =  {  fg=schema.gray[5],               bg=schema.none              },
     Folded                      =  {  fg=schema.gray[4],               bg=schema.bg_highlight      },
     EndOfBuffer                 =  {  fg=schema.bg,                    bg=schema.none              },
     IncSearch                   =  {  fg=schema.fg_invert,             bg=schema.orange            },
