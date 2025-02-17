@@ -172,6 +172,7 @@ function setup()
     vim.api.nvim_command('syntax reset')
   end
 
+  vim.g.colors_name = "vn-night"
   vim.o.background = 'dark'
   vim.o.termguicolors = true
 
